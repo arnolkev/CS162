@@ -36,5 +36,42 @@ Paper::~Paper(){}
  *********************************************************************/
 bool Paper::fight(Tool* tool)
 {
-    return true;
+    if (tool.getType == s)
+{
+	if((strength / 2 ) > tool.getStrength)
+	{
+		return true;
+	}
+	
+	else
+	{
+		return false;
+	}
+
+}
+
+if (tool.getType == p )
+{
+	
+		return false;
+	
+
+}
+
+if (tool.getType == r)
+{
+	if((strength * 2 ) > tool.getStrength)
+	{
+		return true;
+	}
+	
+	else
+	{
+		return false;
+	}
+
+}
+
+    
+}
 }
