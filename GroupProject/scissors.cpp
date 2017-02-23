@@ -36,5 +36,44 @@ Scissors::~Scissors(){}
  *********************************************************************/
 bool Scissors::fight(Tool* tool)
 {
-    return true;
+   {
+if (tool.getType == r)
+{
+	if((strength / 2 ) > tool.getStrength)
+	{
+		return true;
+	}
+	
+	else
+	{
+		return false;
+	}
+
+}
+
+if (tool.getType == s)
+{
+	
+		return false;
+	
+
+}
+
+if (tool.getType == p)
+{
+	if((strength * 2 ) > tool.getStrength)
+	{
+		return true;
+	}
+	
+	else
+	{
+		return false;
+	}
+
+}
+
+
+   
+}
 }
