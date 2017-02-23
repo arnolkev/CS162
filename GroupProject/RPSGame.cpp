@@ -74,4 +74,20 @@ void RPSGame::endGame(){}
  *********************************************************************/
 void RPSGame::round(){}
 
+		   
+		
+int RPSGame::validNumInput()
+{
+	int x;
+	cin >> x;
+	while (x <= 0)
+	{
+
+		cin.clear();
+		cin.ignore(100, '\n');
+		cout << "Please enter a positive integer ";
+		cin >> x;
+	}
+	return x;
+}
 	
