@@ -152,8 +152,30 @@ void RPSGame::round()
 	}
 
 	// code for the fight goes here
-
+	bool first = human.fight(computer);
+	bool second = computer.fight(human);
+	
+	
+	
 	// update score
+	if (first == true && second == false)
+	{
+		cout << "You Win!";
+		human_wins += 1;
+	}
+	
+	else if (first == false && second == true)
+	{
+		cout << "You Lose!";
+		computer_wins += 1;
+	}
+	
+	else if (first == false && second == false)
+	{
+		cout << "Draw";
+		ties += 1;
+	}
+		
 	
 }
 
